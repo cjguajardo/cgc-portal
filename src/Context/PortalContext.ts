@@ -5,7 +5,6 @@ const PortalContext = createContext<PortalContextProps>({
   state: {
     element: null,
     options: {},
-    show: false,
   },
   dispatch: () => {},
 });

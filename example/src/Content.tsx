@@ -1,33 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Pressable,
-  ActivityIndicator,
-  SafeAreaView,
-  Alert,
-} from 'react-native';
+import { Modal, Loader } from './Components';
+import { View, Text, Pressable, SafeAreaView, Alert } from 'react-native';
+import styles from './styles';
 import { usePortal } from 'react-native-simple-portal';
-
-const Modal: React.FC = () => (
-  <View style={styles.modal}>
-    <Text style={styles.h1}>Hello Portal!</Text>
-    <Text style={styles.p}>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia corporis
-      numquam enim, tempore deserunt eos repellat assumenda est veritatis
-      aspernatur suscipit quos rerum ex perspiciatis omnis dolore magni atque
-      asperiores!
-    </Text>
-  </View>
-);
-
-const Loader: React.FC = () => (
-  <View>
-    <Text style={styles.loading}>Loading...</Text>
-    <ActivityIndicator size="large" color="#FFFF00" />
-  </View>
-);
 
 const Content: React.FC = () => {
   const { mount } = usePortal();
@@ -74,58 +49,5 @@ const Content: React.FC = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  SafeAreaView: {
-    flex: 1,
-    backgroundColor: 'white',
-    height: '100%',
-    width: '100%',
-  },
-  modal: {
-    display: 'flex',
-    backgroundColor: 'white',
-    padding: 20,
-    borderRadius: 5,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    backgroundColor: 'white',
-    width: '100%',
-  },
-  h1: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  loading: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
-    color: 'white',
-  },
-  p: {
-    fontSize: 16,
-    marginBottom: 20,
-    paddingHorizontal: 20,
-  },
-  button: {
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: 5,
-    marginBottom: 20,
-  },
-  text: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});
 
 export default Content;
