@@ -1,3 +1,5 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+import PortalProvider from './Provider/PortalProvider';
+import PortalContext from './Context/PortalContext';
+import usePortal from './Hook/usePortal';
+
+export { PortalProvider, usePortal, PortalContext };
