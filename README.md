@@ -1,6 +1,6 @@
 # React Native Simple Portal
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cjguajardo/react-native-simple-portal/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cjguajardo/cgc-portal/blob/main/LICENSE)
 
 ## Description
 
@@ -17,13 +17,13 @@ React Native Simple Portal is a lightweight library that allows you to render co
 To install React Native Simple Portal, you can use npm or yarn:
 
 ```sh
-npm install react-native-simple-portal
+npm install cgc-portal
 ```
 
 or
 
 ```sh
-yarn add react-native-simple-portal
+yarn add cgc-portal
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ yarn add react-native-simple-portal
 ```typescript
 import * as React from 'react';
 
-import { PortalProvider } from 'react-native-simple-portal';
+import { PortalProvider } from 'cgc-portal';
 import Content from './Content';
 
 export default function App() {
@@ -48,7 +48,7 @@ import React from 'react';
 import { Modal, Loader } from './Components';
 import { View, Text, Pressable, SafeAreaView, Alert } from 'react-native';
 import styles from './styles';
-import { usePortal } from 'react-native-simple-portal';
+import { usePortal } from 'cgc-portal';
 
 const Content: React.FC = () => {
   const { mount } = usePortal();
@@ -99,7 +99,7 @@ const Content: React.FC = () => {
 export default Content;
 ```
 
-For more detailed usage instructions and examples, please refer to the [documentation](https://github.com/cjguajardo/react-native-simple-portal/blob/main/README.md).
+For more detailed usage instructions and examples, please refer to the [documentation](https://github.com/cjguajardo/cgc-portal/blob/main/README.md).
 
 ## Methods
 
@@ -107,7 +107,7 @@ For more detailed usage instructions and examples, please refer to the [document
 /**
  * other imports
  * */
-import { usePortal } from 'react-native-simple-portal';
+import { usePortal } from 'cgc-portal';
 
 /**
  * component code
@@ -156,7 +156,7 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/cjguajardo/react-native-simple-portal/blob/main/LICENSE) file for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/cjguajardo/cgc-portal/blob/main/LICENSE) file for more information.
 
 ## Support
 

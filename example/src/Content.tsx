@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Loader } from './Components';
 import { View, Text, Pressable, SafeAreaView, Alert } from 'react-native';
 import styles from './styles';
-import { usePortal } from 'react-native-simple-portal';
+import { usePortal } from 'cgc-portal';
 
 const Content: React.FC = () => {
   const { mount } = usePortal();

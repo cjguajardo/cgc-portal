@@ -1,5 +1,5 @@
 {
-  "name": "react-native-simple-portal",
+  "name": "cgc-portal",
   "version": "0.1.0",
   "description": "A simple portal for react native",
   "main": "lib/commonjs/index",
@@ -40,13 +40,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/cjguajardo/react-native-simple-portal",
+  "repository": "https://github.com/cjguajardo/cgc-portal",
   "author": "Carlos Guajardo Cornejo <cj.guajardo@cgcapps.cl> (https://github.com/cjguajardo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cjguajardo/react-native-simple-portal/issues"
+    "url": "https://github.com/cjguajardo/cgc-portal/issues"
   },
-  "homepage": "https://github.com/cjguajardo/react-native-simple-portal#readme",
+  "homepage": "https://github.com/cjguajardo/cgc-portal#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { PortalProvider } from 'react-native-simple-portal';
+import { PortalProvider } from 'cgc-portal';
 import Content from './Content';
 
 export default function App() {
